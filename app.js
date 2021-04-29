@@ -8,7 +8,7 @@ var graphqlHTTP = require('express-graphql');
 var schema = require('./graphql/bookSchemas');
 var cors = require("cors");
 
-mongoose.connect('mongodb+srv://diegosTensor:juana99@cluster0.zf9fl.mongodb.net/graph?retryWrites=true&w=majority', { promiseLibrary: require('bluebird'), useNewUrlParser: true })
+mongoose.connect('godb+srv://diegosTensor:juana99@cluster0.zf9fl.mongodb.net/graph?retryWrites=true&w=majority', { promiseLibrary: require('bluebird'), useNewUrlParser: true })
   .then(() =>  console.log('connection successful'))
   .catch((err) => console.error(err));
 
